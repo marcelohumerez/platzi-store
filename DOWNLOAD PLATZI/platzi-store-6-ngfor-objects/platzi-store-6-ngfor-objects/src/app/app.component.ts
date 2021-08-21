@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { Product } from './product.models';
+import { Product } from './product.model';
 
 @Component({
   selector: 'app-root',
@@ -10,9 +10,9 @@ import { Product } from './product.models';
 export class AppComponent {
   title = 'platzi-store';
 
-  items = ['marcelo', 'ivan', 'perez'];
+  items = ['nicolas', 'julian', 'perez'];
 
-  
+  objeto = {};
 
   products: Product[] = [
     {
@@ -57,7 +57,7 @@ export class AppComponent {
       price: 80000,
       description: 'bla bla bla bla bla'
     },
-  ]
+  ];
 
   addItem() {
     this.items.push('nuevo item');
